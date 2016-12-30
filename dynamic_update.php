@@ -190,6 +190,7 @@ $user_query = "
         AND (
                 perm_items.name = 'zone_content_edit_own'
                 OR perm_items.name = 'zone_content_edit_others'
+                OR perm_items.name = 'user_is_ueberuser'
         )
 ";
 $user = $db->queryRow($user_query);
